@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>welcom</title>
+        <meta charset='utf-8'>
+    </head>
+    <body>
+        <h1><a href='/'>Welcome Python</a></h1>
+        <h6>{{ who }}</h6>
+        <a href='login'>login</a>
+        <a href='logout'>logout</a>
+        <a href='join'>join</a>
+        <a href='withdraw'>withdraw</a><br><br>
+
+        <form active='/join' method='POST'>
+            <p><input type='text' name='id' placeholder='login id'></p>
+            <p><input type='text' name='pf' placeholder='profile'></p>
+            <p><input type='password' name='pw' placeholder='password'></p>
+            <p><button type=submit>회원가입</button></p>
+        </form>
+
+        {{ content }}
+        
+    </body>
+</html>
